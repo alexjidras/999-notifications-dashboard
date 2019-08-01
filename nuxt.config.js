@@ -17,7 +17,6 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css' }
-      // { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css' }
     ]
   },
   /*
@@ -28,7 +27,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/css/normalize.css'
+    '~assets/css/normalize.css',
+    '~assets/css/fontawesomepro.min.css'
   ],
   /*
   ** Plugins to load before mounting the App

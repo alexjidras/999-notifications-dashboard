@@ -4,7 +4,7 @@
     <div class="row">
       <div class="six columns" >
         <div class="notifications-body">
-          <img src="~assets/999-logo.svg" class="img-999"/>
+          <img src="~assets/img/999-logo.svg" class="img-999"/>
           <p class="title">Primește notificări</p>
           <p class="subtitle">Now is a global deployment network built on top of all existing cloud providers. It makes teams productive by removing servers and configuration, giving you a seamless developer experience to build modern scalable web apps.</p>
           <nuxt-link class="details-link" to="/details">Află mai multe</nuxt-link>
@@ -12,7 +12,7 @@
       </div>
       <div class="six columns">
         <div class="notifications-img">
-          <img class="img-phone" src="~assets/phone3.png" />
+          <img class="img-phone" src="~assets/img/phone.png" />
         </div>
       </div>
     </div>
@@ -73,8 +73,8 @@ export default {
   /* box-shadow: rgba(0, 0, 0, 0.14) 0px 20px 50px 0px; */
 }
 .details-link {
-  color: #0070f3;
   font-size:16px;
+  color: #0070f3;
 }
 .notifications-body {
   margin-top: 70px;

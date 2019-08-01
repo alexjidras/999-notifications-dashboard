@@ -3,28 +3,35 @@
         <div class="main">
             <div class="center-content">
                 <Notification :message="error" v-show="error"/>
-                 <img src="~assets/999-logo.svg" class="img-999"/>
+                 <img src="~assets/img/999-logo.svg" class="img-999"/>
                 <div class="auth-form-body">
                       <!-- <div class="title-box">
                           Autentificare
                       </div> -->
                     <form name="login" class="login-form" method="POST" @submit.prevent="login">
                         <label class="login-label">Nume utilizator</label>
-                        <input
-                            name="username"
-                            v-model="username"
-                            type="text"
-                            class="login-input"
-                            required
-                        />
+                        <div style="position: relative">
+                          <i class="fas fa-user input-icon"></i>
+                          <input
+                              name="username"
+                              v-model="username"
+                              type="text"
+                              class="login-input"
+                              required
+                              autofocus
+                          />
+                        </div>
                         <label class="login-label">Parolă<nuxt-link class="forgot-password" to="/forgot-password">Am uitat parola</nuxt-link></label>
-                        <input
-                            name="password"
-                            v-model="password"
-                            type="password"
-                            class="login-input"
-                            required
-                        />
+                        <div style="position: relative">
+                          <i class="fas fa-lock input-icon"></i>
+                          <input
+                              name="password"
+                              v-model="password"
+                              type="password"
+                              class="login-input"
+                              required
+                          />
+                        </div>
                         <button class="button-primary login-submit" type="submit">Intră</button>
                     </form>
                 </div>
@@ -76,6 +83,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.input-icon {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 16px;
+}
 .login-form{
     margin-bottom: 10px;
 }
@@ -125,6 +138,7 @@ export default {
     &:focus {
       border-color: #fff;
     }
+    padding-left: 34px;
 }
 
 .login-label {
